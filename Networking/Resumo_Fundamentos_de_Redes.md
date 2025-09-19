@@ -1,4 +1,4 @@
-# Fundamentos de Rede - ## O que são Redes?
+# Fundamentos de Rede - O que são Redes?
 
 Networking (redes) é quase como o processo de se cumprimentar vizinhos na sua rua, ou como o sistema de envios de cartas e encomendas, as redes na computação usam a mesma sistematica, a comunicação
 entre dispositivos tecnológicos, podendo ser composta por 2 a até bilhões de dispositivos simultaneamente, que vão desde seu computador, até sua impressora (as vezes até mesmo sua geladeira).
@@ -11,7 +11,7 @@ pelo Departamento de Defesa dos Estados Unidos. Porém somente em 1989 que a int
 que conhecemos hoje como WWW (World Wide Web).
 Como falado acima existem varias pequenas redes interligadas, sejam elas publicas ou privadas, com as pequenas redes sendo as redes privadas e redes maiores sendo publicas - ou Internet.
 
-##Endereços IP
+## Endereços IP
 
 O processo de se identificar dispositivos em uma rede é semelhante ao de se identificar humanos, então o dispositivo teria um "Nome" e um "Impressão digital" por assim dizer,
 o nome sendo seu IP publico em uma rede e suas impressões digitais sendo seu endereço MAC - endereço de controle de acesso de midia (podemos pensar nisso como se fosse um número de série).
@@ -35,7 +35,7 @@ O crescimento de dispositivos conectados causou escassez de endereços IPv4, que
 lém de ser mais eficiente. A principal diferença é a capacidade muito maior e melhorias no funcionamento em relação ao IPv4.
 
 
-##Endereço MAC
+## Endereço MAC
 
 Todos os dispositivos possuem uma interface de rede fisica, que seria integrada na sua placa-mãe, essa interface recebe um endereço exclusivo recebido na fábrica, chamado de endereço MAC (Media Access Control),
 este endereço MAC é um número hexadecimal de doze caracteres dividido em dois e seperado por dois pontos (:), sendo considerados separadores, por exemplo: a4:c3:f0:85:ac:2d. Onde os seis primeiros caracteres são da empresa
