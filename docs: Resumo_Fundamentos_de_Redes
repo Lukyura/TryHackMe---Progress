@@ -43,7 +43,7 @@ que fez a interface e os ultimos seis são um número exclusivo.
 
 ## Spoofing de MAC 
 
-No entanto, esse endereço pode ser facilmente fasilficado (spoofing). Isso ocorre quando um dispositivo se passa por outro utilizando seu endereço MAC, e muitas vezes pode violar pojetos de segurança mal implementados,
+No entanto, esse endereço pode ser facilmente fasificado (spoofing). Isso ocorre quando um dispositivo se passa por outro utilizando seu endereço MAC, e muitas vezes pode violar projetos de segurança mal implementados,
 Firewalls e redes públicas às vezes usam endereços MAC para controlar o acesso. Se um dispositivo fizer spoofing de MAC, pode se passar por outro (como o administrador) e burlar a segurança.
 
 Locais publicos costumam usar o controle de endereço MAC ao usar suas redes Wi-Fi "para Convidados" ou "Pública". Essa configuração pode oferecer serviços melhores, ou seja, uma conexão mais rápida 
