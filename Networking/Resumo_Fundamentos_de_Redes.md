@@ -58,7 +58,7 @@ Esse PING mede o tempo que um pacote ICMP leva pra viajar de um dispositivo para
 Pings podem ser executados em dispositivos em uma rede, como sua rede doméstica, ou em recursos como sites. Esta ferramenta é fácil de usar e vem instalada em sistemas operacionais como Linux e Windows.
 A sintaxe para executar um ping simples é: ping IP address or website URL
 
-
+## Resumo
 Redes são a base da comunicação digital. Compreender IPs, MACs e protocolos como ICMP é essencial para entender 
 como os dispositivos interagem e como a segurança pode ser comprometida por técnicas como spoofing.
 
