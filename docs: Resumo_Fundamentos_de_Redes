@@ -53,7 +53,7 @@ por um preço, se você estiver disposto a pagar a taxa por dispositivo.
 ## PING e sua Função
 
 O PING é uma das ferramentas mais fundamentais de rede que existem, ele utiliza pacotes ICMP (Internet Control Message Protocol) para poder determinar o desempenho de uma conexão e se a mesma é confiavel.
-Esse PING mede o tempo que um pacote ICMP leva pra viajar de um dispositivo para outro, medição essa que é feita utilizando um pacote ECO do ICMP e recebe em seguida uma resposta desse ECO.
+Esse PING mede o tempo que um pacote ICMP leva pra viajar de um dispositivo para outro, medição essa que é feita utilizando um pacote ECHO do ICMP e recebe em seguida uma resposta desse ECHO.
 
 Pings podem ser executados em dispositivos em uma rede, como sua rede doméstica, ou em recursos como sites. Esta ferramenta é fácil de usar e vem instalada em sistemas operacionais como Linux e Windows.
 A sintaxe para executar um ping simples é: ping IP address or website URL
