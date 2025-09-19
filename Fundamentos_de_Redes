@@ -1,0 +1,58 @@
+Fundamentos de Rede - O que são e como funcionam?
+
+Como um módulo completado, a medida que for completando módulos importantes eu estarei postando aqui como forma de resumir meu aprendizado!
+
+Networking (redes) é quase como o processo de se comprimentar vizinhos na sua rua, ou como o sistema de envios de cartas e encomendas, as redes na computação usam a mesma sistematica, a comunicação
+entre dispositivos tecnológicos, podendo ser composta por 2 a até bilhões de dispositivos simultaneamente, que vão desde seu computador, até sua impressora (as vezes até mesmo sua geladeira).
+Sende esse um conceito de suma importancia na segurança cibernética 
+
+A Internet: é uma rede gigante, com varias pequenas redes integradas dentro de si, com sua primeira interação sendo documentada na década de 1960 com o uso da ARPANET, tendo sido financiada 
+pelo Departamento de Defesa dos Estados Unidos. Porém somente em 1989 que a internet como conhecemos hoje foi inventada por Tim Berners-Lee com a criação do que conhecemos hoje como WWW (World Wide Web).
+Como falado acima existem varias pequenas redes interligadas, sejam elas publicas ou privadas, com as pequenas redes sendo as redes privadas e redes maiores sendo publicas - ou Internet.
+
+O processo de se identificar dispositivos em uma rede é semelhante ao de se identificar humanos, então o dispositivo teria um "Nome" e um "Impressão digital" por assim dizer, o nome sendo seu IP publico em uma rede
+e suas impressões digitais sendo seu endereço MAC - endereço de controle de acesso de midia (podemos pensar nisso como se fosse um número de série).
+Dessa forma, o IP é uma maneira de se identificar o host em uma rede por um periodo de tempo, onde esse IP pode então ser associado a outro sem que seja alterado.
+Um endereço de IP é dividido 4 octetos, variando de 0 a 255, e seu valor é calculado utilizando uma tecnica de endereçamento IP e sub-redes. Então é importante saber que endereços de IP mudam de
+dispositivos para dispositivos, mas o mesmo não pode estar ativo mais de uma vez na mesma rede.
+Endereços de IP seguem um conjunto de padrões conhecidos como protocolos, protocolos esses que são como a espinha dorsal das redes e forçam muitos dispositivos a se comunicarem na mesma linguagem. Dependendo da rede a qual
+o dispositivo se encontra, isso ira determinar o IP do mesmo, sendo diferenciado do publico para o privado. Com o publico sendo usado para identificar ele na internet e o privado sendo utlizado para identificar entre outros
+dispositivos.
+
+DISPOSITIVO          ENDREÇO         TIPO DE ENDEREÇO
+DESKTOP-KJE57FD      192.168.1.77    Privado
+DESKTOP-KJE57FD      86.157.52.21    Público
+CMNatic-PC           192.168.1.74    Privado
+CMNatic-PC           86.157.52.21    Público
+
+Os dois dispositivos podem se comunicar entre si usando IPs privados. Mas, ao acessar a internet, ambos aparecem com o mesmo IP público, que é fornecido pelo provedor de internet (ISP) mediante pagamento, que seria
+sua conta de internet.
+O crescimento de dispositivos conectados causou escassez de endereços IPv4, que suporta apenas 4,29 bilhões. Para resolver isso, foi criado o IPv6, que suporta até 2^128 endereços (mais de 340 trilhões), a
+lém de ser mais eficiente. A principal diferença é a capacidade muito maior e melhorias no funcionamento em relação ao IPv4.
+
+ENDEREÇO MAC: Todos os dispositivos possuem uma interface de rede fisica, que seria integrada na sua placa-mãe, essa interface recebe um endereço exclusivo recebido na fábrica, chamado de endereço MAC (Media Access Control),
+este endereço MAC é um número hexadecimal de doze caracteres dividido em dois e seperado por dois pontos (:), sendo considerados separadores, por exemplo: a4:c3:f0:85:ac:2d. Onde os seis primeiros caracteres são da empresa
+que fez a interface e os ultimos seis são um número exclusivo.
+No entanto, esse endereço pode ser facilmente fasilficado (spoofing). Isso ocorre quando um dispositivo se passa por outro utilizando seu endereço MAC, e muitas vezes pode violar pojetos de segurança mal implementados,
+Firewalls e redes públicas às vezes usam endereços MAC para controlar o acesso. Se um dispositivo fizer spoofing de MAC, pode se passar por outro (como o administrador) e burlar a segurança.
+
+Locais publicos costumam usar o controle de endereço MAC ao usar suas redes Wi-Fi "para Convidados" ou "Pública". Essa configuração pode oferecer serviços melhores, ou seja, uma conexão mais rápida 
+por um preço, se você estiver disposto a pagar a taxa por dispositivo.
+
+
+PING E SUA FUNÇÃO: o PING é uma das ferramentas mais fundamentais de rede que existem, ele utiliza pacotes ICMP (Internet Control Message Protocol) para poder determinar o desempenho de uma conexão e se a mesma é confiavel.
+Esse PING mede o tempo que um pacote ICMP leva pra viajar de um dispositivo para outro, medição essa que é feita utilizando um pacote ECO do ICMP e recebe em seguida uma resposta desse ECO.
+
+Pings podem ser executados em dispositivos em uma rede, como sua rede doméstica, ou em recursos como sites. Esta ferramenta é fácil de usar e vem instalada em sistemas operacionais como Linux e Windows.
+A sintaxe para executar um ping simples é: ping IP address or website URL
+
+
+
+
+
+
+
+
+
+
+
