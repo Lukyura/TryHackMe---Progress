@@ -4,7 +4,7 @@
 
 ## Topologias:
 
-  Ao longo dos anos ouveram diversos tipos de experimentação no quesito topologia de rede, quando nos referimos a este termo, estamos na verdade falando do projeto ou da aparência da rede em questão
+  Ao longo dos anos houve diversos tipos de experimentação no quesito topologia de rede, quando nos referimos a este termo, estamos na verdade falando do projeto ou da aparência da rede em questão
 e falaremos das vantagens e desvantagens de certas topologias.
 
 ## Topologia de Estrela:
@@ -30,11 +30,11 @@ ela é sujeita a falhas, embora de forma reduzida, ou seja, se o dispositivo que
             [PC4]       [PC5]       [PC6]
 
 
-  Este tipo de conexão depende apenas de um unico cabo, conhecido como backbone, se assemelha muito a uma folha de arvore, no sentido de que os dispostivos seriam as folhas e partem do galho que seria o cabo.
+  Este tipo de conexão depende apenas de um unico cabo, conhecido como backbone, se assemelha muito a uma folha de arvore, no sentido de que os dispositivos seriam as folhas e partem do galho que seria o cabo.
 
   Como todos os dados navegam por um mesmo cabo, ele fica sujeito a uma sobrecarga resultando em lentidão e gargalo caso os dispositivos dentro da rede aceitem dados simultaneamente, e em caso de gargalo
 o resultado é uma solução de problemas complicada pois fica dificil de se encontrar o dispositivo que esta com problemas ja que os dados trafegam pela mesma rota.
-  No entanto, dito isto esse tipo de topologia são faceis e economicas de se configurar com custos reduzidos, como cabo e equipamentos de rede dedicados usados para conexão entre os dispositivos.
+  No entanto, dito isto esse tipo de topologia são fáceis e economicas de se configurar com custos reduzidos, como cabo e equipamentos de rede dedicados usados para conexão entre os dispositivos.
   
   Por fim, uma ultima desvantagem dessa topologia é a pouca redundância em caso de falhas, isto se deve ao fato de que há um unico ponto de falha ao longo do backbone. Em caso de rompimento do cabo os dispositivos
 não conseguiriam mais receber ou transmitir dados.
@@ -46,7 +46,7 @@ não conseguiriam mais receber ou transmitir dados.
        |          |
       [PC4] ---- [PC3]
   
-  Neste tipo de topologia, os dispositivos também são conectados uns aos outros formando um loop, oque resulta em pouco gasto com equipamento dedicado e cabeamento como em uma topologia estrela.
+  Neste tipo de topologia, os dispositivos também são conectados uns aos outros formando um loop, o que resulta em pouco gasto com equipamento dedicado e cabeamento como em uma topologia estrela.
 Ela funciona enviando dados pelo loop até que cheguem ao destino, usando dispositivos ao longo do caminho para encaminhar esses dados, e curiosamente um dispositivo só enviará os dados recebidos
 caso o mesmo não tenha dados a serem enviados, caso tenha, ele enviará os proprios dados primeiro.
 
@@ -57,6 +57,7 @@ a gargalos que a de barramento, pois não há trafego de grandes volumes de dado
 
 ## Switches:
 
+  São dispositivos dedicados dentro de uma rede, e projetados para agregar varios dispositivos simultaneamente
 
 
   
