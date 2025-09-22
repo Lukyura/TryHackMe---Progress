@@ -53,7 +53,11 @@ caso o mesmo não tenha dados a serem enviados, caso tenha, ele enviará os prop
   Como os dados sempre trafegarão em uma unica direção, é relativamente facil de solucionar falhas eventuais que venham a surgir, no entanto, pode ser uma faca de dois gumes, levando em conta que
 essa não é a maneira mais eficiente de se fazer o trafego de dados, pois um dado pode ter que passar por varios dispositivos antes de chegar no destino. Por fim, essas topologias são menos propensas
 a gargalos que a de barramento, pois não há trafego de grandes volumes de dados simultaneamente, porém, basta um cabo cortado ou um dispositivo defeituoso e resultará na interrupção de toda a rede.
-  
+
+
+## Switches:
+
+
 
   
 
