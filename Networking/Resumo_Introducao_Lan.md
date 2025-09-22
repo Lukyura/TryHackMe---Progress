@@ -70,9 +70,9 @@ acabe reduzindo de certa forma o desempenho da rede aumentando o caminho percorr
   Roteamento é o nome dado ao processo de transmissão de dados através de redes, e envolve a criação de um caminho para que esses dados possam ser entregues, sendo utili quando varios dispositivos estão conectados
   em varios caminhos.  
 
-  # Sub-Redes e suas características 
+# Sub-Redes e suas características 
 
-
+  Como sabemos, redes podem ser encontradas 
   
 
 
