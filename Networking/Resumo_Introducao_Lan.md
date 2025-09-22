@@ -9,9 +9,9 @@ e falaremos das vantagens e desvantagens de certas topologias.
 
 ## Topologia de Estrela:
 
-       [Switch]
-       /   |   \
-   [PC1] [PC2] [PC3]
+          [Switch]
+         /   |   \
+     [PC1] [PC2] [PC3]
 
   Sua premissa principal são os dispositivos estarem conectados através de um outro dispositivo central, como um hub ou um switch, sendo a topologia mais encontrada atualmente devido sua escalabilidade e
 confiabilidade, apesar de ter um custo mais alto de manutenção. Nesta topologia, todas as informações enviadas a um dispositivo saem originalmente do dispositivo central onde ele está conectado.
@@ -23,5 +23,5 @@ ela é sujeita a falhas, embora de forma reduzida, ou seja, se o dispositivo que
 
 ## Topologia de Barramento:
 
-   [PC1] -- [PC2] -- [PC3] -- [PC4]
+     [PC1] -- [PC2] -- [PC3] -- [PC4]
   
