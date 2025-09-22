@@ -57,7 +57,20 @@ a gargalos que a de barramento, pois não há trafego de grandes volumes de dado
 
 ## Switches:
 
-  São dispositivos dedicados dentro de uma rede, e projetados para agregar varios dispositivos simultaneamente
+  São dispositivos dedicados dentro de uma rede, e projetados para agregar varios dispositivos simultaneamente. Esses diversos dispositivos são conectados a porta de um switch. Switchs são geralmente encontrados
+em redes maiores, onde existem varios dispositivos para conectar, podendo suportar de 4 a 64 conexões simultaneas.
+  São mais eficientes que seus equivalentes menores (hubs/repetidores), por sua capacidade de monitorar as conexões e em qual porta o dispositivo está, facilitando o envio de arquivos diretamente para o destino.
+
+  Switches e roteadores podem ser conectados entre si, assim melhorando a redundacia da rede, com varios caminhos pelos quais o dado pode percorrer, então em caso de falha outro caminho será utilizado. Embora isso
+acabe reduzindo de certa forma o desempenho da rede aumentando o caminho percorrido do dado, não haverá tempo de inatividade.
+
+## Roteadores:
+
+  Sua função é exatamente aquilo que seu nome diz, transmitir dados entre dispositivos através do roteamento. 
+  Roteamento é o nome dado ao processo de transmissão de dados através de redes, e envolve a criação de um caminho para que esses dados possam ser entregues, sendo utili quando varios dispositivos estão conectados
+  em varios caminhos.  
+
+  # Sub-Redes e suas características 
 
 
   
