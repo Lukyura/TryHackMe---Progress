@@ -23,5 +23,47 @@ ela é sujeita a falhas, embora de forma reduzida, ou seja, se o dispositivo que
 
 ## Topologia de Barramento:
 
-     [PC1] -- [PC2] -- [PC3] -- [PC4]
+           [PC1]       [PC2]       [PC3]
+              │           │           │
+    ──────────┴───────────┴───────────┴──────────
+              │           │           │
+            [PC4]       [PC5]       [PC6]
+
+
+  Este tipo de conexão depende apenas de um unico cabo, conhecido como backbone, se assemelha muito a uma folha de arvore, no sentido de que os dispostivos seriam as folhas e partem do galho que seria o cabo.
+
+  Como todos os dados navegam por um mesmo cabo, ele fica sujeito a uma sobrecarga resultando em lentidão e gargalo caso os dispositivos dentro da rede aceitem dados simultaneamente, e em caso de gargalo
+o resultado é uma solução de problemas complicada pois fica dificil de se encontrar o dispositivo que esta com problemas ja que os dados trafegam pela mesma rota.
+  No entanto, dito isto esse tipo de topologia são faceis e economicas de se configurar com custos reduzidos, como cabo e equipamentos de rede dedicados usados para conexão entre os dispositivos.
+  
+  Por fim, uma ultima desvantagem dessa topologia é a pouca redundância em caso de falhas, isto se deve ao fato de que há um unico ponto de falha ao longo do backbone. Em caso de rompimento do cabo os dispositivos
+não conseguiriam mais receber ou transmitir dados.
+
+## Topologia em anel:
+
+      [PC1] ---- [PC2]
+       |          |
+       |          |
+      [PC4] ---- [PC3]
+  
+  Neste tipo de topologia, os dispositivos também são conectados uns aos outros formando um loop, oque resulta em pouco gasto com equipamento dedicado e cabeamento como em uma topologia estrela.
+Ela funciona enviando dados pelo loop até que cheguem ao destino, usando dispositivos ao longo do caminho para encaminhar esses dados, e curiosamente um dispositivo só enviará os dados recebidos
+caso o mesmo não tenha dados a serem enviados, caso tenha, ele enviará os proprios dados primeiro.
+
+  Como os dados sempre trafegarão em uma unica direção, é relativamente facil de solucionar falhas eventuais que venham a surgir, no entanto, pode ser uma faca de dois gumes, levando em conta que
+essa não é a maneira mais eficiente de se fazer o trafego de dados, pois um dado pode ter que passar por varios dispositivos antes de chegar no destino. Por fim, essas topologias são menos propensas
+a gargalos que a de barramento, pois não há trafego de grandes volumes de dados simultaneamente, porém, basta um cabo cortado ou um dispositivo defeituoso e resultará na interrupção de toda a rede.
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
   
