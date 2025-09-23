@@ -68,14 +68,74 @@ acabe reduzindo de certa forma o desempenho da rede aumentando o caminho percorr
 
   Sua função é exatamente aquilo que seu nome diz, transmitir dados entre dispositivos através do roteamento. 
   Roteamento é o nome dado ao processo de transmissão de dados através de redes, e envolve a criação de um caminho para que esses dados possam ser entregues, sendo utili quando varios dispositivos estão conectados
-  em varios caminhos.  
+em varios caminhos.  
 
-# Sub-Redes e suas características 
+## Sub-Redes e suas características 
 
-  Como sabemos, redes podem ser encontradas 
+  Como sabemos, redes podem ser encontradas em todos os formatos e tamanhos. Sub-Rede é o termo utilizado para dividir uma rede em redes menores dentro de si mesma, podemos pensar nisso como fatiar um bolo, onde cada pedaço
+é destinado para uma pessoa, uma sub-rede é basicamente decidir quem ficará com cada fatia.
+  Embora você saiba pra onde enviar cada informação e quem deverá receber essa informação, as redes também precisam saber. Os administradores usam as sub-redes para categorizar e atribuir partes especificas de uma rede para
+refletir isso.
+  Uma sub-rede é obtida pela divisão do número de hosts que cabem na rede, representado por um número chamado de máscara da sub-rede. Então lembramos do IP, e lembramos também que é composto por 4 seções de octetos, e o mesmo
+vale para uma máscara de sub-rede, sendo também representada por um número de quatro bytes (32 bits), variando de 0 a 255.
+
+  As sub-redes usam endereços IP de 3 maneiras diferentes:
+  *Identificar o endereço de rede
+  *Identificar o endereço do host
+  *Identificar o gateway padrão
+
+  **Endereço de rede** → Identifica a rede (exemplo: `192.168.1.0`)  
+  **Endereço do host** → Identifica um dispositivo dentro da rede (exemplo: `192.168.1.100`)  
+  **Gateway padrão** → Responsável por enviar dados para fora da rede local (exemplo: `192.168.1.254`)  
+
+  A sub-rede oferece uma série de benefícios, incluindo:
+  Eficiência
+  Segurança
+  Controle total
+
+## Protocolo ARP
+
+  O ARP (Address Resolution Protocol) é a tecnologia responsavel por permitir que dispositivos se identifiquem para uma rede, ou seja, permitidino que o dispositivo associe seu endereço MAC com um IP da rede.
+  Cada dispositivo na rede manterá um registro dos endereços MAC associados a outros dispositivos.
+  Quando dispositivos desejam se comunicar com outro, eles enviam uma transmissão para toda rede em busca do dispositivo especifico, e podem usar o ARP para encontrar o endereço MAC respectivo.
+
+Como o ARP funciona?
+  Cada dispositivo em uma rede possui um registro para armazenar informações, conhecido com cache, e esse cache armazena os identificadores de outros dispositivos na rede.
+  Se baseando em dois tipos de identificadores a SOLICITAÇÃO ARP e a RESPOSTA ARP. Quando uma solicitação é enviada, há a transmissão de uma mensagem para a rede, e quando outros dispositivos recebem,
+eles só responderão se possuirem a resposta, então devolverão com uma RESPOSTA ARP com seu endereço MAC. O dispositivo solicitante agora poderá se lembrar deste mapeamento e manter en seu cache ARP.
+
+## DHCP
+
+  Endereços de IP podem ser definidos manualmente ou automaticamente, e a forma mais comum de se fazer automaticamente é usando um servidor DHCP (Dynamic Host Configuration Protocol). Quando um dispositivo
+se conecta a uma rede, caso ele ainda não possua um IP atribuido manualmente, ele enviará uma solicitação ao DHCP que então irá definir um IP válido para aquele dispositivo, então o dispositivo envia uma resposta
+confirmando que deseja o endereço de IP, e por fim, o DHCP confirma a finalização da operação e o dispositivo já poderá usar o endereço IP.
+  A ordem então seria: DHCP Discover -> DHCP Offer -> DHCP Request - > DHCP ACK
+  
+  
   
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
