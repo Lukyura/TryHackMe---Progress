@@ -7,13 +7,14 @@ do modelo OSI podem ser compreendidos por outros dispositivos.
   Consiste em sete camadas, onde cada camada tem um conjunto diferente de responsabilidades. Em cada camada individual que os dados percorrem, processo específicos ocorrem e pedaços de informação serão adicionados.
 
   O modelo consiste nas seguintes camadas:
+  
  7. Aplicação (Application)  
  6. Apresentação (Presentation)  
  5. Sessão (Session)  
  4. Transporte (Transport)  
  3. Rede (Network)  
  2. Enlace de Dados (Data Link)  
- 1. Física (Physical)
+1. Física (Physical)
 
   Agora veremos um pouco mais das camadas:
 
