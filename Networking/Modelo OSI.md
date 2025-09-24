@@ -8,13 +8,13 @@ do modelo OSI podem ser compreendidos por outros dispositivos.
 
   O modelo consiste nas seguintes camadas:
   
- 7. Aplicação (Application)  
- 6. Apresentação (Presentation)  
- 5. Sessão (Session)  
- 4. Transporte (Transport)  
- 3. Rede (Network)  
- 2. Enlace de Dados (Data Link)  
-1. Física (Physical)
+  Aplicação (Application)  
+  Apresentação (Presentation)  
+  Sessão (Session)  
+  Transporte (Transport)  
+  Rede (Network)  
+  Enlace de Dados (Data Link)  
+  Física (Physical)
 
   Agora veremos um pouco mais das camadas:
 
