@@ -55,15 +55,33 @@ Por causa disto o TCP garante que qualquer dado será enviado e recebido pelo ou
 | Destino IP                | Este é o endereço IP do dispositivo ao qual o pacote é destinado.                                                                                                                |
 | Sequência Número          | Quando ocorre uma conexão, o primeiro dado transmitido recebe um número aleatório.                                                                                               |
 | Número Reconhecimento     | Depois que um dado tiver recebido um número de sequência, o número do dado seguinte terá o número de sequência + 1.                                                              |
-| Soma de verificação       | Esse valor é que dá integridade ao TCP. É feito um cálculo matemático onde a saída é lembrada. Quando o dispositivo receptor realiza o cálculo, os dados devem estar corretos; caso contrário, serão considerados corrompidos. |
+| Checksum                  | Esse valor é que dá integridade ao TCP. É feito um cálculo matemático onde a saída é lembrada. Quando o dispositivo receptor realiza o cálculo, os dados devem estar corretos; caso contrário, serão considerados corrompidos. |
 | Dados                     | Este cabeçalho é onde os dados, ou seja, bytes de um arquivo que está sendo transmitido, são armazenados.                                                                        |
-| Bandeira                  | Este cabeçalho determina como o pacote deve ser tratado por qualquer um dos dispositivos durante o processo de aperto de mão. Bandeiras específicas determinarão comportamentos. |
+| Flag                      | Este cabeçalho determina como o pacote deve ser tratado por qualquer um dos dispositivos durante o processo de aperto de mão. Bandeiras específicas determinarão comportamentos. |
 
+  Agora as principais mensagens especiais usadas durante a comunicação desse processo:
 
+| **Etapa** | **Mensagem** | **Descrição**                                                                                                                                         |
+|-----------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1         | SYN          | Uma mensagem SYN é o pacote inicial enviado por um cliente durante o handshake. Este pacote é usado para iniciar uma conexão e sincronizar os dois dispositivos. |
+| 2         | SYN/ACK      | Este pacote é enviado pelo dispositivo receptor (servidor) para reconhecer a tentativa de sincronização do cliente.                                   |
+| 3         | ACK          | O pacote de reconhecimento pode ser usado tanto pelo cliente quanto pelo servidor para confirmar que uma série de mensagens/pacotes foi recebida com sucesso. |
+| 4         | DATA         | Uma vez que a conexão foi estabelecida, os dados (como bytes de um arquivo) são enviados através da mensagem "DATA".                                  |
+| 5         | FIN          | Este pacote é usado para encerrar a conexão de forma limpa (adequada) após sua conclusão.                                                            |
+| #         | RST          | Este pacote encerra abruptamente toda a comunicação. É usado como último recurso e indica que houve algum problema no processo. Por exemplo, se o serviço ou aplicação não estiver funcionando corretamente ou se o sistema tiver falhas como falta de recursos. |
 
+  Qualquer dado enviado recebe uma sequência numérica aleatória e é reconstruido essa sequência númerica e incrementando em 1. Ambos dispositivos devem concordar com a mesma sequência númerica para que os dados sejam enviados na ordem correta.
 
+| **Dispositivo**    | **Sequência Numérica Inicial (ISN)** | **Sequência Numérica Final**    |
+|--------------------|--------------------------------------|---------------------------------|
+| Cliente (Emissor)  | 0                                    | 0 + 1 = 1                       |
+| Cliente (Emissor)  | 1                                    | 1 + 1 = 2                       |
+| Cliente (Emissor)  | 2 (2)                                | 2 + 1 = 3                       |
 
+  Primeiro o TCP fechará uma conexão depois que um dispositivo determinar que o outro recebeu com sucesso todos os dados. Para iniciar o encerramento da conexão, o dispositivo enviará o pacote "FIN" para o outro dispositivo, e o TCP irá reconhecer este pacote.
 
+## UDP/IP
+  
 
 
 
