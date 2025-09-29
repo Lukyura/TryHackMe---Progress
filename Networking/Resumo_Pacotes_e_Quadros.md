@@ -32,4 +32,47 @@ podem se quebrar rapidamente se não houver uma padronização.
   3. Internet (Internet)
   4. Interface de Rede (Network Interface)
 
-  As informações são adcionadas a camado do TCP à medida que o pacote o atravessa, e este processamento é conhecido como  encapsulamento e o inverso dele é o desencapsulamento
+  As informações são adcionadas a camado do TCP à medida que o pacote o atravessa, e este processamento é conhecido como  encapsulamento e o inverso dele é o desencapsulamento.
+
+  Uma carácteristica do TCP é a de que ele é baseado em conexão, o que significa que ele deverá estabelecer uma conexão entre um cliente e um dispositivo atuando como um servidor antes dos dados serem enviados.
+Por causa disto o TCP garante que qualquer dado será enviado e recebido pelo outro lado. Este processo é chamado de Three-Way-Handshake.
+
+  Aqui estão algumas de suas vantagens:
+  1. Garante a integridade dos dados;
+  2. Capaz de sincronizar dois dispositivos para evitar que um seja inundado de dados na ordem errada;
+  3. Realiza os processos com confiabilidade.
+
+  Agora algumas desvantagens:
+  1. Requer uma conexão confiavel entre os dois dispositivos. Se um pequeno pedaço de informação não for recebido, então todo o pedaço sera corrompido e deverá ser reenviado;
+  2. Uma conexão lenta pode estrangular outro dispositivo, pois a conexão será reservada em outro dispositivo o tempo todo;
+  3. É significativamente mais lento que o UDP, pois mais trabalho tem que ser feito pelos aparelhos usando este protocolo.
+
+| **Cabeçalho**             | **Descrição**                                                                                                                                                                    |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Porta Fonte               | Esse valor é a porta aberta pelo remetente para enviar o pacote TCP. Este valor é escolhido aleatoriamente (fora das portas de 0–65535 que ainda não estão em uso no momento).   |
+| Porta Destino             | Este valor é o número da porta que um aplicativo ou serviço está executando no host remoto (aquele que recebe dados); por exemplo, um servidor web rodando na porta 80. Ao contrário da porta de origem, esse valor não é escolhido aleatoriamente. |
+| Fonte IP                  | Este é o endereço IP do dispositivo que está enviando o pacote.                                                                                                                  |
+| Destino IP                | Este é o endereço IP do dispositivo ao qual o pacote é destinado.                                                                                                                |
+| Sequência Número          | Quando ocorre uma conexão, o primeiro dado transmitido recebe um número aleatório.                                                                                               |
+| Número Reconhecimento     | Depois que um dado tiver recebido um número de sequência, o número do dado seguinte terá o número de sequência + 1.                                                              |
+| Soma de verificação       | Esse valor é que dá integridade ao TCP. É feito um cálculo matemático onde a saída é lembrada. Quando o dispositivo receptor realiza o cálculo, os dados devem estar corretos; caso contrário, serão considerados corrompidos. |
+| Dados                     | Este cabeçalho é onde os dados, ou seja, bytes de um arquivo que está sendo transmitido, são armazenados.                                                                        |
+| Bandeira                  | Este cabeçalho determina como o pacote deve ser tratado por qualquer um dos dispositivos durante o processo de aperto de mão. Bandeiras específicas determinarão comportamentos. |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
